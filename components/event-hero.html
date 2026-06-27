@@ -1,0 +1,29 @@
+<!-- event-hero: top section of an event detail page -->
+<!-- modifier classes:
+     .event-hero--standard  (free event, no buy ticket)
+     .event-hero--ticketed  (adds buy ticket CTA)
+     .event-hero--child     (adds parent event eyebrow + link)
+-->
+
+<!-- Standard / parent event -->
+<section class="event-hero event-hero--standard">
+  <a href="#" class="eyebrow eyebrow--link">Parent Event</a>
+  <h1 class="event-hero__title">Session title faucibus etiam ultricies neque</h1>
+  <div class="event-hero__meta">
+    <p class="event-hero__date">August 27–28, 2022, 12:00–13:00 p.m. ET</p>
+    <p class="event-hero__location">New York City</p>
+    <p class="event-hero__sponsor">Presented by Mastercard</p>
+  </div>
+</section>
+
+<!-- Ticketed session -->
+<section class="event-hero event-hero--ticketed">
+  <p class="eyebrow">Dealbook 2022</p>
+  <h1 class="event-hero__title">Session title faucibus etiam ultricies neque</h1>
+  <div class="event-hero__meta">
+    <p class="event-hero__date">August 27–28, 2022, 11:00am–7:00pm ET</p>
+    <p class="event-hero__location">New York City</p>
+    <p class="event-hero__sponsor">Presented by Mastercard</p>
+  </div>
+  <a href="#" class="btn btn--primary event-hero__cta">Buy Ticket</a>
+</section>
