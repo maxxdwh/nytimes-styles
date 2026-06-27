@@ -1,8 +1,10 @@
 <!-- event-hero: top section of an event detail page -->
 <!-- modifier classes:
-     .event-hero--standard  (free event, no buy ticket)
-     .event-hero--ticketed  (adds buy ticket CTA)
-     .event-hero--child     (adds parent event eyebrow + link)
+     .event-hero--standard      free event, no buy ticket
+     .event-hero--ticketed      adds buy ticket CTA
+     .event-hero--get-updates   upcoming with no ticket yet
+     .event-hero--max           large format, collage art right, light bg
+     .event-hero--max-inverse   large format, full-bleed dark bg + art, white text
 -->
 
 <!-- Standard / parent event -->
@@ -26,4 +28,57 @@
     <p class="event-hero__sponsor">Presented by Mastercard</p>
   </div>
   <a href="#" class="btn btn--primary event-hero__cta">Buy Ticket</a>
+</section>
+
+<!-- Upcoming / get updates (no ticket yet) -->
+<section class="event-hero event-hero--get-updates">
+  <p class="event-format">Virtual / In-Person</p>
+  <h1 class="event-hero__title">Event Title Goes Here</h1>
+  <div class="event-hero__meta">
+    <p class="event-hero__date">August 27, 2022, 12:00–13:00 p.m. ET</p>
+    <p class="event-hero__location">New York City</p>
+    <p class="event-hero__sponsor">Presented by Mastercard</p>
+  </div>
+  <a href="#" class="btn btn--primary event-hero__cta">Get Updates</a>
+</section>
+
+<!-- Max — large format, light, collage art (e.g. Dealbook light) -->
+<section class="event-hero event-hero--max">
+  <div class="event-hero__max-body">
+    <p class="eyebrow">In Person</p>
+    <h1 class="event-hero__title">Dealbook Summit</h1>
+    <div class="event-hero__meta">
+      <p class="event-hero__date">November 30, 2022, 8 a.m.–6 p.m. E.D.T.</p>
+      <p class="event-hero__location">New York, NY</p>
+      <p class="event-hero__sponsor">Premier Sponsor Accenture</p>
+    </div>
+    <div class="event-hero__ctas">
+      <a href="#" class="btn btn--primary">Buy Ticket</a>
+      <a href="#" class="btn btn--secondary">Learn More</a>
+    </div>
+  </div>
+  <div class="event-hero__max-art">
+    <!-- Full-bleed collage image -->
+    <div class="event-hero__art-placeholder media-block media-block--1x1"></div>
+  </div>
+</section>
+
+<!-- Max inverse — large format, dark/full-bleed (e.g. Dealbook dark variant) -->
+<section class="event-hero event-hero--max-inverse">
+  <div class="event-hero__max-art event-hero__max-art--bg">
+    <div class="event-hero__art-placeholder"></div>
+  </div>
+  <div class="event-hero__max-body">
+    <p class="eyebrow">In Person</p>
+    <h1 class="event-hero__title">Dealbook Summit</h1>
+    <div class="event-hero__meta">
+      <p class="event-hero__date">November 30, 2022, 8 a.m.–6 p.m. E.D.T.</p>
+      <p class="event-hero__location">New York, NY</p>
+      <p class="event-hero__sponsor">Premier Sponsor Accenture</p>
+    </div>
+    <div class="event-hero__ctas">
+      <a href="#" class="btn btn--primary">Buy Ticket</a>
+      <a href="#" class="btn btn--secondary">Learn More</a>
+    </div>
+  </div>
 </section>
