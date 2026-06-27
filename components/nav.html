@@ -1,9 +1,24 @@
 <!-- nav: site header -->
+<!--
+  Two logo variants:
+  - xs/sm: "T | Events" (T glyph + pipe + bold Events)
+  - md+:   "The New York Times Events" (light NYT wordmark + bold Events)
+-->
 <header class="nav">
   <a class="nav__logo" href="/" aria-label="NYT Events home">
-    <!-- swap for SVG logo -->
-    <span class="nav__logo-t">T</span>
-    <span class="nav__logo-text">Events</span>
+    <!-- xs/sm logo -->
+    <span class="nav__logo-xs" aria-hidden="true">
+      <span class="nav__logo-t">T</span>
+      <span class="nav__logo-pipe">|</span>
+      <span class="nav__logo-events">Events</span>
+    </span>
+    <!-- md+ logo -->
+    <span class="nav__logo-md" aria-hidden="true">
+      <span class="nav__logo-nyt">The New York Times</span>
+      <span class="nav__logo-events">Events</span>
+    </span>
+    <!-- sr-only full name for both -->
+    <span class="nav__logo-sr">The New York Times Events</span>
   </a>
   <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false">
     <span class="nav__hamburger"></span>

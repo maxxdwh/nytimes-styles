@@ -74,43 +74,83 @@
 }
 .nav__logo {
   display: flex;
-  align-items: baseline;
-  gap: var(--space-4);
+  align-items: center;
   text-decoration: none;
   color: var(--text-primary);
 }
+.nav__logo-sr {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+/* xs/sm logo: T | Events */
+.nav__logo-xs {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+}
 .nav__logo-t {
   font-family: var(--font-cheltenham);
-  font-size: var(--font-size-22);
+  font-size: var(--font-size-20);
   font-weight: 700;
+  line-height: 1;
 }
-.nav__logo-text {
+.nav__logo-pipe {
+  font-family: var(--font-franklin);
+  font-size: var(--font-size-14);
+  font-weight: 300;
+  color: var(--color-gray-400);
+}
+.nav__logo-events {
   font-family: var(--font-franklin);
   font-size: var(--font-size-13);
   font-weight: 700;
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-1);
 }
+
+/* md+ logo: The New York Times Events */
+.nav__logo-md { display: none; align-items: baseline; gap: var(--space-4); }
+.nav__logo-nyt {
+  font-family: var(--font-cheltenham);
+  font-size: var(--font-size-14);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+@media (min-width: 720px) {
+  .nav__logo-xs { display: none; }
+  .nav__logo-md { display: flex; }
+}
+
+/* hamburger — bordered square button */
 .nav__menu-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: var(--space-4);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-primary);
+  background: none;
+  cursor: pointer;
+  padding: 0;
   flex-direction: column;
   gap: 5px;
 }
+.nav__menu-btn:hover { border-color: var(--text-primary); }
 .nav__hamburger,
 .nav__hamburger::before,
 .nav__hamburger::after {
   display: block;
-  width: 22px;
+  width: 16px;
   height: 1.5px;
   background: var(--text-primary);
   content: '';
 }
 .nav__hamburger { position: relative; }
-.nav__hamburger::before { position: absolute; top: -6px; }
-.nav__hamburger::after  { position: absolute; top:  6px; }
+.nav__hamburger::before { position: absolute; top: -5px; }
+.nav__hamburger::after  { position: absolute; top:  5px; }
 
 /* ── eyebrow ── */
 

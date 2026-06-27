@@ -33,10 +33,18 @@
   <p class="showcase-label">nav</p>
   <header class="nav">
     <a class="nav__logo" href="/" aria-label="NYT Events home">
-      <span class="nav__logo-t">T</span>
-      <span class="nav__logo-text">Events</span>
+      <span class="nav__logo-xs" aria-hidden="true">
+        <span class="nav__logo-t">T</span>
+        <span class="nav__logo-pipe">|</span>
+        <span class="nav__logo-events">Events</span>
+      </span>
+      <span class="nav__logo-md" aria-hidden="true">
+        <span class="nav__logo-nyt">The New York Times</span>
+        <span class="nav__logo-events">Events</span>
+      </span>
+      <span class="nav__logo-sr">The New York Times Events</span>
     </a>
-    <button class="nav__menu-btn" aria-label="Open menu">
+    <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false">
       <span class="nav__hamburger"></span>
     </button>
   </header>
