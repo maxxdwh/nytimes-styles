@@ -11,7 +11,7 @@
 <body>
 
   <header class="nav">
-    <a class="nav__logo" href="/" aria-label="NYT Events home">
+    <a class="nav__logo" href="home.html" aria-label="NYT Events home">
       <span class="nav__logo-xs" aria-hidden="true">
         <span class="nav__logo-t">T</span>
         <span class="nav__logo-pipe">|</span>
@@ -33,8 +33,8 @@
       <button class="nav-menu__close" aria-label="Close menu">×</button>
       <nav aria-label="Main navigation">
         <ul class="nav-menu__list">
-          <li class="nav-menu__item"><a href="/upcoming" class="nav-menu__link">Upcoming Events</a></li>
-          <li class="nav-menu__item"><a href="/past" class="nav-menu__link">Past Events</a></li>
+          <li class="nav-menu__item"><a href="event-pre-max.html" class="nav-menu__link">Upcoming Events</a></li>
+          <li class="nav-menu__item"><a href="past-events.html" class="nav-menu__link">Past Events</a></li>
         </ul>
       </nav>
     </div>
@@ -42,7 +42,6 @@
 
   <main>
 
-    <!-- Hero: past event (standard, no CTA) -->
     <div class="container">
       <section class="event-hero event-hero--standard">
         <p class="event-format">In Person</p>
@@ -55,10 +54,8 @@
       </section>
     </div>
 
-    <!-- Hero image -->
-    <img class="hero-image" src="" alt="Dealbook Summit 2021" role="img">
+    <img class="hero-image" src="https://images.unsplash.com/photo-1540575467537-a76b16e3d3d3?w=1400&q=80" alt="Dealbook Summit 2021">
 
-    <!-- Subnav -->
     <nav class="subnav" aria-label="Page sections">
       <ul class="subnav__list">
         <li><a href="#overview"  class="subnav__link subnav__link--active" aria-current="true">Overview</a></li>
@@ -68,19 +65,19 @@
       </ul>
     </nav>
 
-    <!-- Overview + video -->
     <div class="container">
       <div class="event-body-grid page-section" id="overview">
         <div class="event-body-grid__media">
-          <!-- Full replay video -->
-          <div class="media-block media-block--16x9"></div>
+          <div class="media-block media-block--16x9">
+            <img class="media-block__img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=80" alt="Dealbook Summit 2021 replay">
+          </div>
           <p class="media-caption">Watch the full Dealbook Summit 2021 replay</p>
         </div>
         <div class="event-body-grid__text">
           <p class="lead-text">A landmark gathering of business and political leaders that defined the year's most important conversations.</p>
           <div class="body-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque arcu enim maurs, sit pellentesque tincidunt risus amet mollis. Lobortis tincidunt id convallis ornare adipiscing condimentum tempus hac.</p>
-            <p>In urna penatibus nisl eget. Amet enim tincidunt scelerisque odio ut bibendum. Arcu enim maurs sit pellentesque tincidunt risus amet.</p>
+            <p>The 2021 DealBook Summit brought together CEOs, policymakers, entrepreneurs, and cultural figures for a day of wide-ranging conversations at Jazz at Lincoln Center in New York City.</p>
+            <p>From the future of finance and the global supply chain crisis to the metaverse and the future of work, the summit tackled the questions shaping our world.</p>
           </div>
           <a href="#" class="share-button" aria-label="Share this event">
             <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
@@ -92,7 +89,6 @@
 
     <hr class="divider">
 
-    <!-- Speakers -->
     <div class="container">
       <div class="page-section" id="speakers">
         <section class="speakers">
@@ -100,8 +96,10 @@
           <ul class="speakers__grid">
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Andrew Ross Sorkin">
+                  </div>
                   <div class="speaker-card__body">
                     <h3 class="speaker-card__name">Andrew Ross Sorkin</h3>
                     <p class="speaker-card__title">Financial Columnist, The New York Times</p>
@@ -111,22 +109,26 @@
             </li>
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Speaker">
+                  </div>
                   <div class="speaker-card__body">
-                    <h3 class="speaker-card__name">Speaker Name</h3>
-                    <p class="speaker-card__title">Title, Organization</p>
+                    <h3 class="speaker-card__name">Melinda French Gates</h3>
+                    <p class="speaker-card__title">Co-chair, Bill &amp; Melinda Gates Foundation</p>
                   </div>
                 </a>
               </article>
             </li>
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Speaker">
+                  </div>
                   <div class="speaker-card__body">
-                    <h3 class="speaker-card__name">Speaker Name</h3>
-                    <p class="speaker-card__title">Title, Organization</p>
+                    <h3 class="speaker-card__name">Tim Cook</h3>
+                    <p class="speaker-card__title">CEO, Apple</p>
                   </div>
                 </a>
               </article>
@@ -138,15 +140,16 @@
 
     <hr class="divider">
 
-    <!-- Sessions (child session cards) -->
     <div class="container">
       <div class="page-section" id="sessions">
         <h2 class="section-heading">Sessions</h2>
         <ul class="event-card-grid">
           <li>
             <article class="event-card">
-              <a href="#" class="event-card__link">
-                <div class="media-block media-block--16x9"></div>
+              <a href="session.html" class="event-card__link">
+                <div class="media-block media-block--16x9">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80" alt="The Future of Finance">
+                </div>
                 <div class="event-card__body">
                   <h3 class="event-card__title">The Future of Finance</h3>
                   <p class="event-card__sponsor">Andrew Ross Sorkin · 45 min</p>
@@ -156,8 +159,10 @@
           </li>
           <li>
             <article class="event-card">
-              <a href="#" class="event-card__link">
-                <div class="media-block media-block--16x9"></div>
+              <a href="session.html" class="event-card__link">
+                <div class="media-block media-block--16x9">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1497366754035-f200581dc5d7?w=600&q=80" alt="Reimagining Work">
+                </div>
                 <div class="event-card__body">
                   <h3 class="event-card__title">Reimagining Work</h3>
                   <p class="event-card__sponsor">Panel · 60 min</p>
@@ -167,8 +172,10 @@
           </li>
           <li>
             <article class="event-card">
-              <a href="#" class="event-card__link">
-                <div class="media-block media-block--16x9"></div>
+              <a href="session.html" class="event-card__link">
+                <div class="media-block media-block--16x9">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80" alt="Climate and Capital">
+                </div>
                 <div class="event-card__body">
                   <h3 class="event-card__title">Climate &amp; Capital</h3>
                   <p class="event-card__sponsor">Panel · 45 min</p>
@@ -182,7 +189,6 @@
 
     <hr class="divider">
 
-    <!-- Press -->
     <div class="container">
       <div class="page-section" id="press">
         <section class="press">
@@ -195,7 +201,9 @@
                 <p class="press-card__date">Published Nov. 9, 2021</p>
                 <a href="#" class="press-card__link">Read Article →</a>
               </div>
-              <div class="press-card__media media-block media-block--3x2"></div>
+              <div class="press-card__media media-block media-block--3x2">
+                <img class="media-block__img" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="">
+              </div>
             </li>
           </ul>
         </section>
@@ -204,7 +212,6 @@
 
     <hr class="divider">
 
-    <!-- You might also like -->
     <div class="container">
       <div class="page-section">
         <section class="related-events">
@@ -212,8 +219,10 @@
           <ul class="related-events__grid">
             <li>
               <article class="event-card">
-                <a href="#" class="event-card__link">
-                  <div class="media-block media-block--3x2"></div>
+                <a href="event-pre-max.html" class="event-card__link">
+                  <div class="media-block media-block--3x2">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Dealbook Summit 2022">
+                  </div>
                   <div class="event-card__body">
                     <h3 class="event-card__title">Dealbook Summit 2022</h3>
                     <p class="event-card__sponsor">November 30, 2022</p>
@@ -223,8 +232,10 @@
             </li>
             <li>
               <article class="event-card">
-                <a href="#" class="event-card__link">
-                  <div class="media-block media-block--3x2"></div>
+                <a href="event-post.html" class="event-card__link">
+                  <div class="media-block media-block--3x2">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80" alt="Dealbook Summit 2020">
+                  </div>
                   <div class="event-card__body">
                     <h3 class="event-card__title">Dealbook Summit 2020</h3>
                     <p class="event-card__sponsor">December 2, 2020</p>
@@ -241,15 +252,15 @@
 
   <footer class="footer">
     <div class="footer__top">
-      <a href="/" class="footer__logo" aria-label="NYT Events home">
+      <a href="home.html" class="footer__logo" aria-label="NYT Events home">
         <span class="footer__logo-text">The New York Times Events</span>
       </a>
     </div>
     <div class="footer__nav-row">
       <nav class="footer__nav" aria-label="Footer navigation">
         <ul class="footer__nav-col">
-          <li><a href="#" class="footer__nav-link">Upcoming Events</a></li>
-          <li><a href="#" class="footer__nav-link">Past Events</a></li>
+          <li><a href="event-pre-max.html" class="footer__nav-link">Upcoming Events</a></li>
+          <li><a href="past-events.html" class="footer__nav-link">Past Events</a></li>
         </ul>
         <ul class="footer__nav-col">
           <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>

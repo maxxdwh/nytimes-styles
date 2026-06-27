@@ -11,7 +11,7 @@
 <body>
 
   <header class="nav">
-    <a class="nav__logo" href="/" aria-label="NYT Events home">
+    <a class="nav__logo" href="home.html" aria-label="NYT Events home">
       <span class="nav__logo-xs" aria-hidden="true">
         <span class="nav__logo-t">T</span>
         <span class="nav__logo-pipe">|</span>
@@ -33,8 +33,8 @@
       <button class="nav-menu__close" aria-label="Close menu">×</button>
       <nav aria-label="Main navigation">
         <ul class="nav-menu__list">
-          <li class="nav-menu__item"><a href="/upcoming" class="nav-menu__link">Upcoming Events</a></li>
-          <li class="nav-menu__item"><a href="/past" class="nav-menu__link">Past Events</a></li>
+          <li class="nav-menu__item"><a href="event-pre-max.html" class="nav-menu__link">Upcoming Events</a></li>
+          <li class="nav-menu__item"><a href="past-events.html" class="nav-menu__link">Past Events</a></li>
         </ul>
       </nav>
     </div>
@@ -42,12 +42,13 @@
 
   <main>
 
-    <!-- Bio header -->
     <div class="container">
       <div class="page-section">
         <div class="bio-header">
           <div class="bio-header__photo-col">
-            <div class="bio-header__photo media-block media-block--1x1"></div>
+            <div class="bio-header__photo media-block media-block--1x1">
+              <img class="media-block__img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Al Gore">
+            </div>
             <ul class="bio-header__social" aria-label="Social links">
               <li><a href="#" class="bio-header__social-link" aria-label="Twitter">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
@@ -58,7 +59,7 @@
             </ul>
           </div>
           <div class="bio-header__body">
-            <p class="eyebrow"><a href="/event/climate-hub-2022" class="eyebrow eyebrow--link">Climate Hub 2022</a></p>
+            <p class="eyebrow"><a href="event-pre-min.html" class="eyebrow eyebrow--link">Climate Hub 2022</a></p>
             <h1 class="bio-header__name">Al Gore</h1>
             <p class="bio-header__title">45th Vice President of the United States; Founder &amp; Chairman, The Climate Reality Project</p>
           </div>
@@ -68,7 +69,6 @@
 
     <hr class="divider">
 
-    <!-- Bio body text -->
     <div class="container">
       <div class="event-body-grid page-section">
         <div class="event-body-grid__text">
@@ -80,13 +80,14 @@
           </div>
         </div>
         <div class="event-body-grid__media">
-          <!-- Speaking at -->
           <aside class="speaking-at">
             <h2 class="speaking-at__heading">Speaking at</h2>
             <ul class="speaking-at__list">
               <li class="speaking-at__item">
-                <a href="/event/climate-hub-2022" class="speaking-at__link">
-                  <div class="media-block media-block--3x2 speaking-at__thumb"></div>
+                <a href="event-pre-min.html" class="speaking-at__link">
+                  <div class="media-block media-block--3x2 speaking-at__thumb">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&q=80" alt="Climate Hub 2022">
+                  </div>
                   <div class="speaking-at__body">
                     <h3 class="speaking-at__title">Climate Hub 2022</h3>
                     <p class="speaking-at__date">October 3–7, 2022 · New York City</p>
@@ -103,15 +104,15 @@
 
   <footer class="footer">
     <div class="footer__top">
-      <a href="/" class="footer__logo" aria-label="NYT Events home">
+      <a href="home.html" class="footer__logo" aria-label="NYT Events home">
         <span class="footer__logo-text">The New York Times Events</span>
       </a>
     </div>
     <div class="footer__nav-row">
       <nav class="footer__nav" aria-label="Footer navigation">
         <ul class="footer__nav-col">
-          <li><a href="#" class="footer__nav-link">Upcoming Events</a></li>
-          <li><a href="#" class="footer__nav-link">Past Events</a></li>
+          <li><a href="event-pre-max.html" class="footer__nav-link">Upcoming Events</a></li>
+          <li><a href="past-events.html" class="footer__nav-link">Past Events</a></li>
         </ul>
         <ul class="footer__nav-col">
           <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>

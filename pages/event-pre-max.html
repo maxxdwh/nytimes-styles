@@ -11,7 +11,7 @@
 <body>
 
   <header class="nav">
-    <a class="nav__logo" href="/" aria-label="NYT Events home">
+    <a class="nav__logo" href="home.html" aria-label="NYT Events home">
       <span class="nav__logo-xs" aria-hidden="true">
         <span class="nav__logo-t">T</span>
         <span class="nav__logo-pipe">|</span>
@@ -33,8 +33,8 @@
       <button class="nav-menu__close" aria-label="Close menu">×</button>
       <nav aria-label="Main navigation">
         <ul class="nav-menu__list">
-          <li class="nav-menu__item"><a href="/upcoming" class="nav-menu__link">Upcoming Events</a></li>
-          <li class="nav-menu__item"><a href="/past" class="nav-menu__link">Past Events</a></li>
+          <li class="nav-menu__item"><a href="event-pre-max.html" class="nav-menu__link">Upcoming Events</a></li>
+          <li class="nav-menu__item"><a href="past-events.html" class="nav-menu__link">Past Events</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +45,7 @@
     <!-- Hero: max-inverse (dark full-bleed Dealbook style) -->
     <section class="event-hero event-hero--max-inverse">
       <div class="event-hero__max-art event-hero__max-art--bg">
-        <div class="event-hero__art-placeholder"></div>
+        <img src="https://images.unsplash.com/photo-1540575467537-a76b16e3d3d3?w=1400&q=80" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
       <div class="event-hero__max-body">
         <p class="eyebrow">In Person</p>
@@ -56,8 +56,8 @@
           <p class="event-hero__sponsor">Premier Sponsor Accenture</p>
         </div>
         <div class="event-hero__ctas">
-          <a href="#" class="btn btn--primary">Buy Ticket</a>
-          <a href="#" class="btn btn--secondary">Learn More</a>
+          <a href="#applications" class="btn btn--primary">Buy Ticket</a>
+          <a href="#overview" class="btn btn--secondary">Learn More</a>
         </div>
       </div>
     </section>
@@ -79,20 +79,28 @@
     <div class="container">
       <div class="event-body-grid page-section" id="overview">
         <div class="event-body-grid__media">
-          <div class="media-block media-block--16x9"></div>
+          <div class="media-block media-block--16x9">
+            <img class="media-block__img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=80" alt="Dealbook Summit 2022">
+          </div>
           <div class="photo-gallery photo-gallery--3up">
-            <div class="media-block media-block--3x2"></div>
-            <div class="media-block media-block--3x2"></div>
-            <div class="media-block media-block--3x2"></div>
+            <div class="media-block media-block--3x2">
+              <img class="media-block__img" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80" alt="">
+            </div>
+            <div class="media-block media-block--3x2">
+              <img class="media-block__img" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80" alt="">
+            </div>
+            <div class="media-block media-block--3x2">
+              <img class="media-block__img" src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&q=80" alt="">
+            </div>
           </div>
         </div>
         <div class="event-body-grid__text">
           <p class="lead-text">The New York Times Dealbook Summit brings together the world's most influential leaders in business, policy, and culture for a day of conversations that matter.</p>
           <div class="body-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque arcu enim maurs, sit pellentesque tincidunt risus amet mollis. Lobortis tincidunt id convallis ornare adipiscing condimentum tempus hac.</p>
-            <p>In urna penatibus nisl eget. Amet enim tincidunt scelerisque odio ut bibendum. Arcu enim maurs sit pellentesque tincidunt risus amet.</p>
+            <p>Join Andrew Ross Sorkin and a constellation of global leaders for the most anticipated business event of the year. From the future of the economy to the forces reshaping geopolitics, DealBook puts the defining questions of our time in one room.</p>
+            <p>Applications are now open for the November 30 Summit at Jazz at Lincoln Center, New York City.</p>
           </div>
-          <a href="#" class="btn btn--primary">Buy Ticket</a>
+          <a href="#applications" class="btn btn--primary">Buy Ticket</a>
         </div>
       </div>
     </div>
@@ -107,8 +115,10 @@
           <ul class="speakers__grid">
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Andrew Ross Sorkin">
+                  </div>
                   <div class="speaker-card__body">
                     <h3 class="speaker-card__name">Andrew Ross Sorkin</h3>
                     <p class="speaker-card__title">Financial Columnist, The New York Times</p>
@@ -118,33 +128,39 @@
             </li>
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Speaker">
+                  </div>
                   <div class="speaker-card__body">
-                    <h3 class="speaker-card__name">Speaker Name</h3>
-                    <p class="speaker-card__title">Title, Organization</p>
+                    <h3 class="speaker-card__name">David Solomon</h3>
+                    <p class="speaker-card__title">CEO, Goldman Sachs</p>
                   </div>
                 </a>
               </article>
             </li>
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Speaker">
+                  </div>
                   <div class="speaker-card__body">
-                    <h3 class="speaker-card__name">Speaker Name</h3>
-                    <p class="speaker-card__title">Title, Organization</p>
+                    <h3 class="speaker-card__name">Sam Bankman-Fried</h3>
+                    <p class="speaker-card__title">CEO, FTX</p>
                   </div>
                 </a>
               </article>
             </li>
             <li>
               <article class="speaker-card">
-                <a href="#" class="speaker-card__link">
-                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                <a href="speaker-bio.html" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1">
+                    <img class="media-block__img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Speaker">
+                  </div>
                   <div class="speaker-card__body">
-                    <h3 class="speaker-card__name">Speaker Name</h3>
-                    <p class="speaker-card__title">Title, Organization</p>
+                    <h3 class="speaker-card__name">Janet Yellen</h3>
+                    <p class="speaker-card__title">U.S. Secretary of the Treasury</p>
                   </div>
                 </a>
               </article>
@@ -188,12 +204,14 @@
           <h2 class="section-heading">Venue</h2>
           <div class="event-body-grid">
             <div class="event-body-grid__media">
-              <div class="media-block media-block--16x9"></div>
+              <div class="media-block media-block--16x9">
+                <img class="media-block__img" src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=900&q=80" alt="Jazz at Lincoln Center">
+              </div>
             </div>
             <div class="event-body-grid__text body-text">
               <h3>Jazz at Lincoln Center</h3>
               <p>Broadway at 60th Street<br>New York, NY 10023</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque arcu enim maurs, sit pellentesque tincidunt risus amet mollis.</p>
+              <p>Perched atop the Time Warner Center at Columbus Circle, Jazz at Lincoln Center offers sweeping views of Central Park and one of New York City's most iconic settings for the world's premier business summit.</p>
             </div>
           </div>
         </section>
@@ -246,7 +264,9 @@
                 <p class="press-card__date">Published Nov. 9, 2021</p>
                 <a href="#" class="press-card__link">Read Article →</a>
               </div>
-              <div class="press-card__media media-block media-block--3x2"></div>
+              <div class="press-card__media media-block media-block--3x2">
+                <img class="media-block__img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80" alt="">
+              </div>
             </li>
             <li class="press-card">
               <div class="press-card__body">
@@ -255,7 +275,9 @@
                 <p class="press-card__date">Published Oct. 5, 2022</p>
                 <a href="#" class="press-card__link">Read Article →</a>
               </div>
-              <div class="press-card__media media-block media-block--3x2"></div>
+              <div class="press-card__media media-block media-block--3x2">
+                <img class="media-block__img" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="">
+              </div>
             </li>
           </ul>
         </section>
@@ -272,15 +294,31 @@
           <div class="sponsors__tier">
             <p class="sponsors__tier-label">Premier Sponsor</p>
             <ul class="sponsors__list">
-              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
+              <li class="sponsors__item">
+                <div class="sponsors__logo media-block media-block--3x1">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="Accenture">
+                </div>
+              </li>
             </ul>
           </div>
           <div class="sponsors__tier">
             <p class="sponsors__tier-label">Supporting Sponsors</p>
             <ul class="sponsors__list">
-              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
-              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
-              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
+              <li class="sponsors__item">
+                <div class="sponsors__logo media-block media-block--3x1">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Sponsor">
+                </div>
+              </li>
+              <li class="sponsors__item">
+                <div class="sponsors__logo media-block media-block--3x1">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Sponsor">
+                </div>
+              </li>
+              <li class="sponsors__item">
+                <div class="sponsors__logo media-block media-block--3x1">
+                  <img class="media-block__img" src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80" alt="Sponsor">
+                </div>
+              </li>
             </ul>
           </div>
         </section>
@@ -291,15 +329,15 @@
 
   <footer class="footer">
     <div class="footer__top">
-      <a href="/" class="footer__logo" aria-label="NYT Events home">
+      <a href="home.html" class="footer__logo" aria-label="NYT Events home">
         <span class="footer__logo-text">The New York Times Events</span>
       </a>
     </div>
     <div class="footer__nav-row">
       <nav class="footer__nav" aria-label="Footer navigation">
         <ul class="footer__nav-col">
-          <li><a href="#" class="footer__nav-link">Upcoming Events</a></li>
-          <li><a href="#" class="footer__nav-link">Past Events</a></li>
+          <li><a href="event-pre-max.html" class="footer__nav-link">Upcoming Events</a></li>
+          <li><a href="past-events.html" class="footer__nav-link">Past Events</a></li>
         </ul>
         <ul class="footer__nav-col">
           <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
