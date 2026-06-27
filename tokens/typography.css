@@ -1,0 +1,63 @@
+/* Typography Tokens — NYT Styles */
+
+/* Fonts */
+:root {
+  --font-cheltenham: 'Cheltenham', Georgia, serif;
+  --font-franklin: 'Franklin', Arial, sans-serif;
+}
+
+/* Font sizes */
+:root {
+  --font-size-10: 10px;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-19: 19px;
+  --font-size-20: 20px;
+  --font-size-21: 21px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-26: 26px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-42: 42px;
+  --font-size-48: 48px;
+  --font-size-55: 55px;
+  --font-size-64: 64px;
+  --font-size-73: 73px;
+  --font-size-84: 84px;
+  --font-size-96: 96px;
+  --font-size-111: 111px;
+  --font-size-128: 128px;
+  --font-size-144: 144px;
+  --font-size-247: 247px;
+}
+
+/* Line heights */
+:root {
+  --line-height-100: 1;
+  --line-height-110: 1.1;
+  --line-height-120: 1.2;
+  --line-height-130: 1.3;
+  --line-height-140: 1.4;
+  --line-height-150: 1.5;
+}
+
+/* Letter spacing */
+:root {
+  --letter-spacing-0: 0;
+  --letter-spacing-1: 0.01em;
+  --letter-spacing-2: 0.02em;
+  --letter-spacing-3: 0.03em;
+  --letter-spacing-4: 0.04em;
+  --letter-spacing-5: 0.05em;
+  --letter-spacing-6: 0.06em;
+  --letter-spacing-7: 0.07em;
+  --letter-spacing-8: 0.08em;
+}

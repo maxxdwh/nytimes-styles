@@ -1,0 +1,43 @@
+/* Spacing Tokens — NYT Styles */
+
+:root {
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-128: 128px;
+  --space-160: 160px;
+  --space-192: 192px;
+  --space-288: 288px;
+}
+
+/* Responsive spacing sets — value changes at breakpoint */
+/* xs: 0–479px  |  sm: 480–719px  |  md: 720–899px  |  lg: 900–1199px  |  xl–3xl: 1200px+ */
+:root {
+  --spacing-set-1: var(--space-4);
+  --spacing-set-2: var(--space-8);
+  --spacing-set-3: var(--space-12);
+  --spacing-set-4: var(--space-16);   /* lg+: space-24 */
+  --spacing-set-5: var(--space-16);   /* lg+: space-24; xl+: space-32 */
+  --spacing-set-6: var(--space-24);   /* xl+: space-32 */
+  --spacing-set-7: var(--space-24);   /* md+: space-32; xl+: space-48 */
+  --spacing-set-8: var(--space-48);
+  --spacing-set-9: var(--space-32);   /* md+: space-48; xl+: space-64 */
+  --spacing-set-10: var(--space-64);
+  --spacing-set-11: var(--space-48);  /* md+: space-64; xl+: space-80 */
+  --spacing-set-12: var(--space-64);  /* md+: space-80; xl+: space-96 */
+  --spacing-set-13: var(--space-80);  /* md+: space-96; xl+: space-128 */
+  --spacing-set-14: var(--space-96);  /* md+: space-128; xl+: space-160 */
+  --spacing-set-15: var(--space-128); /* md+: space-128; xl+: space-160 */
+  --spacing-set-16: var(--space-96);  /* md+: space-128; xl+: space-192 */
+  --spacing-set-17: var(--space-96);  /* md+: space-192; xl+: space-288 */
+}

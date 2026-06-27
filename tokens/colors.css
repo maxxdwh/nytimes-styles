@@ -1,0 +1,73 @@
+/* Color Tokens — NYT Styles */
+
+/* Neutral palette */
+:root {
+  --color-black: #000000;
+  --color-gray-900: #121212;
+  --color-gray-800: #333333;
+  --color-gray-600: #666666;
+  --color-gray-400: #999999;
+  --color-gray-200: #CCCCCC;
+  --color-gray-100: #E2E2E2;
+  --color-gray-50: #F7F7F7;
+  --color-white: #FFFFFF;
+  --color-warm-gray: #FBF7F6;
+}
+
+/* Semantic palette */
+:root {
+  --color-info-500: #317AF6;
+}
+
+/* Theme — light */
+:root,
+[data-theme="light"] {
+  /* text */
+  --text-primary: var(--color-black);
+  --text-inverse: var(--color-white);
+  --text-secondary: var(--color-gray-600);
+
+  /* border */
+  --border-primary: var(--color-gray-100);
+  --border-secondary: var(--color-black);
+
+  /* background */
+  --background-primary: var(--color-white);
+  --background-secondary: var(--color-gray-50);
+  --background-tertiary: var(--color-warm-gray);
+
+  /* button */
+  --button-primary: var(--color-black);
+  --button-primary-hover: var(--color-gray-800);
+  --button-secondary: transparent;
+  --button-secondary-hover: var(--color-gray-50);
+
+  /* ancillary */
+  --focus: var(--color-info-500);
+}
+
+/* Theme — dark */
+[data-theme="dark"] {
+  /* text */
+  --text-primary: var(--color-white);
+  --text-inverse: var(--color-black);
+  --text-secondary: var(--color-gray-200);
+
+  /* border */
+  --border-primary: var(--color-white);
+  --border-secondary: var(--color-white);
+
+  /* background */
+  --background-primary: var(--color-black);
+  --background-secondary: var(--color-gray-900);
+  --background-tertiary: var(--color-gray-900);
+
+  /* button */
+  --button-primary: var(--color-white);
+  --button-primary-hover: var(--color-gray-100);
+  --button-secondary: transparent;
+  --button-secondary-hover: var(--color-gray-800);
+
+  /* ancillary */
+  --focus: var(--color-info-500);
+}
