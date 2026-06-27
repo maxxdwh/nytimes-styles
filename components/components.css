@@ -396,7 +396,7 @@ a.tag:hover { border-color: var(--text-primary); color: var(--text-primary); }
 
 /* ── related-events ── */
 
-.related-events { padding: var(--space-32) 0; border-top: 1px solid var(--border-primary); }
+.related-events { padding: var(--space-32) 0; }
 .related-events__heading {
   font-family: var(--font-cheltenham);
   font-size: var(--font-size-32);
@@ -770,7 +770,6 @@ a.tag:hover { border-color: var(--text-primary); color: var(--text-primary); }
 
 .press {
   padding: var(--space-32) 0;
-  border-top: 1px solid var(--border-primary);
 }
 .press__heading {
   font-family: var(--font-cheltenham);
@@ -830,7 +829,6 @@ a.tag:hover { border-color: var(--text-primary); color: var(--text-primary); }
 
 .sponsors {
   padding: var(--space-32) 0;
-  border-top: 1px solid var(--border-primary);
 }
 .sponsors__heading {
   font-family: var(--font-cheltenham);
@@ -941,7 +939,6 @@ a.tag:hover { border-color: var(--text-primary); color: var(--text-primary); }
 
 .pricing {
   padding: var(--space-32) 0;
-  border-top: 1px solid var(--border-primary);
 }
 .pricing__heading {
   font-family: var(--font-cheltenham);
@@ -1002,7 +999,6 @@ a.tag:hover { border-color: var(--text-primary); color: var(--text-primary); }
 
 .faq {
   padding: var(--space-32) 0;
-  border-top: 1px solid var(--border-primary);
 }
 .faq__heading {
   font-family: var(--font-cheltenham);

@@ -91,6 +91,10 @@ body {
   margin: 0;
 }
 
+/* ── Anchor scroll offset (accounts for sticky nav + subnav) ── */
+
+[id] { scroll-margin-top: 110px; }
+
 /* ── Page section spacing ── */
 
 .page-section { padding: var(--space-32) 0; }
