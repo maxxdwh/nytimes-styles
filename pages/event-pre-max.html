@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealbook Summit 2022 — NYT Events</title>
+  <link rel="stylesheet" href="../tokens/index.css">
+  <link rel="stylesheet" href="../components/components.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__logo" href="/" aria-label="NYT Events home">
+      <span class="nav__logo-xs" aria-hidden="true">
+        <span class="nav__logo-t">T</span>
+        <span class="nav__logo-pipe">|</span>
+        <span class="nav__logo-events">Events</span>
+      </span>
+      <span class="nav__logo-md" aria-hidden="true">
+        <span class="nav__logo-nyt">The New York Times</span>
+        <span class="nav__logo-events">Events</span>
+      </span>
+      <span class="nav__logo-sr">The New York Times Events</span>
+    </a>
+    <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span class="nav__hamburger"></span>
+    </button>
+  </header>
+
+  <div class="nav-menu" aria-hidden="true" role="dialog" aria-label="Site navigation">
+    <div class="nav-menu__inner">
+      <button class="nav-menu__close" aria-label="Close menu">×</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item"><a href="/upcoming" class="nav-menu__link">Upcoming Events</a></li>
+          <li class="nav-menu__item"><a href="/past" class="nav-menu__link">Past Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero: max-inverse (dark full-bleed Dealbook style) -->
+    <section class="event-hero event-hero--max-inverse">
+      <div class="event-hero__max-art event-hero__max-art--bg">
+        <div class="event-hero__art-placeholder"></div>
+      </div>
+      <div class="event-hero__max-body">
+        <p class="eyebrow">In Person</p>
+        <h1 class="event-hero__title">Dealbook Summit</h1>
+        <div class="event-hero__meta">
+          <p class="event-hero__date">November 30, 2022, 8 a.m.–6 p.m. E.D.T.</p>
+          <p class="event-hero__location">New York, NY</p>
+          <p class="event-hero__sponsor">Premier Sponsor Accenture</p>
+        </div>
+        <div class="event-hero__ctas">
+          <a href="#" class="btn btn--primary">Buy Ticket</a>
+          <a href="#" class="btn btn--secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subnav: expanded Dealbook tabs -->
+    <nav class="subnav" aria-label="Page sections">
+      <ul class="subnav__list">
+        <li><a href="#overview"     class="subnav__link subnav__link--active" aria-current="true">At the Summit</a></li>
+        <li><a href="#speakers"     class="subnav__link">Speakers</a></li>
+        <li><a href="#applications" class="subnav__link">Applications</a></li>
+        <li><a href="#venue"        class="subnav__link">Venue</a></li>
+        <li><a href="#faq"          class="subnav__link">FAQ</a></li>
+        <li><a href="#press"        class="subnav__link">Press</a></li>
+        <li><a href="#sponsors"     class="subnav__link">Sponsors</a></li>
+      </ul>
+    </nav>
+
+    <!-- At the Summit overview -->
+    <div class="container">
+      <div class="event-body-grid page-section" id="overview">
+        <div class="event-body-grid__media">
+          <div class="media-block media-block--16x9"></div>
+          <div class="photo-gallery photo-gallery--3up">
+            <div class="media-block media-block--3x2"></div>
+            <div class="media-block media-block--3x2"></div>
+            <div class="media-block media-block--3x2"></div>
+          </div>
+        </div>
+        <div class="event-body-grid__text">
+          <p class="lead-text">The New York Times Dealbook Summit brings together the world's most influential leaders in business, policy, and culture for a day of conversations that matter.</p>
+          <div class="body-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque arcu enim maurs, sit pellentesque tincidunt risus amet mollis. Lobortis tincidunt id convallis ornare adipiscing condimentum tempus hac.</p>
+            <p>In urna penatibus nisl eget. Amet enim tincidunt scelerisque odio ut bibendum. Arcu enim maurs sit pellentesque tincidunt risus amet.</p>
+          </div>
+          <a href="#" class="btn btn--primary">Buy Ticket</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Speakers -->
+    <div class="container">
+      <div class="page-section" id="speakers">
+        <section class="speakers">
+          <h2 class="speakers__heading">Speakers</h2>
+          <ul class="speakers__grid">
+            <li>
+              <article class="speaker-card">
+                <a href="#" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                  <div class="speaker-card__body">
+                    <h3 class="speaker-card__name">Andrew Ross Sorkin</h3>
+                    <p class="speaker-card__title">Financial Columnist, The New York Times</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="speaker-card">
+                <a href="#" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                  <div class="speaker-card__body">
+                    <h3 class="speaker-card__name">Speaker Name</h3>
+                    <p class="speaker-card__title">Title, Organization</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="speaker-card">
+                <a href="#" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                  <div class="speaker-card__body">
+                    <h3 class="speaker-card__name">Speaker Name</h3>
+                    <p class="speaker-card__title">Title, Organization</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="speaker-card">
+                <a href="#" class="speaker-card__link">
+                  <div class="speaker-card__photo media-block media-block--1x1"></div>
+                  <div class="speaker-card__body">
+                    <h3 class="speaker-card__name">Speaker Name</h3>
+                    <p class="speaker-card__title">Title, Organization</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Applications -->
+    <div class="container">
+      <div class="page-section" id="applications">
+        <section class="pricing">
+          <h2 class="pricing__heading">Applications</h2>
+          <ul class="pricing__list">
+            <li class="pricing-tier">
+              <p class="pricing-tier__name">General Admission</p>
+              <p class="pricing-tier__price">$2,500</p>
+              <p class="pricing-tier__desc">Full day access to all Summit sessions, networking lunch, and evening reception.</p>
+              <a href="#" class="btn btn--primary">Apply Now</a>
+            </li>
+            <li class="pricing-tier">
+              <p class="pricing-tier__name">Premium</p>
+              <p class="pricing-tier__price">$5,000</p>
+              <p class="pricing-tier__desc">Priority seating, pre-Summit breakfast briefing, VIP reception, and exclusive dinners.</p>
+              <a href="#" class="btn btn--primary">Apply Now</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Venue -->
+    <div class="container">
+      <div class="page-section" id="venue">
+        <section>
+          <h2 class="section-heading">Venue</h2>
+          <div class="event-body-grid">
+            <div class="event-body-grid__media">
+              <div class="media-block media-block--16x9"></div>
+            </div>
+            <div class="event-body-grid__text body-text">
+              <h3>Jazz at Lincoln Center</h3>
+              <p>Broadway at 60th Street<br>New York, NY 10023</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque arcu enim maurs, sit pellentesque tincidunt risus amet mollis.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- FAQ -->
+    <div class="container">
+      <div class="page-section" id="faq">
+        <section class="faq">
+          <h2 class="faq__heading">FAQ</h2>
+          <ul class="faq__list">
+            <li class="accordion">
+              <button class="accordion__trigger" aria-expanded="false">Who can attend?</button>
+              <div class="accordion__panel" hidden>
+                <p>The Dealbook Summit is invitation-only. Applications are reviewed on a rolling basis.</p>
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__trigger" aria-expanded="false">Is there a dress code?</button>
+              <div class="accordion__panel" hidden>
+                <p>Business casual attire is recommended.</p>
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__trigger" aria-expanded="false">Can I watch remotely?</button>
+              <div class="accordion__panel" hidden>
+                <p>Select sessions will be livestreamed. Details will be shared closer to the event.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Press -->
+    <div class="container">
+      <div class="page-section" id="press">
+        <section class="press">
+          <h2 class="press__heading">Press</h2>
+          <ul class="press__list">
+            <li class="press-card">
+              <div class="press-card__body">
+                <h3 class="press-card__headline">Andrew Ross Sorkin Brings the World's Most Powerful People to One Room</h3>
+                <p class="press-card__byline">By Michael J. de la Merced</p>
+                <p class="press-card__date">Published Nov. 9, 2021</p>
+                <a href="#" class="press-card__link">Read Article →</a>
+              </div>
+              <div class="press-card__media media-block media-block--3x2"></div>
+            </li>
+            <li class="press-card">
+              <div class="press-card__body">
+                <h3 class="press-card__headline">The Dealbook Summit Returns With A Bigger Stage</h3>
+                <p class="press-card__byline">By The New York Times</p>
+                <p class="press-card__date">Published Oct. 5, 2022</p>
+                <a href="#" class="press-card__link">Read Article →</a>
+              </div>
+              <div class="press-card__media media-block media-block--3x2"></div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Sponsors -->
+    <div class="container">
+      <div class="page-section" id="sponsors">
+        <section class="sponsors">
+          <h2 class="sponsors__heading">Sponsors</h2>
+          <div class="sponsors__tier">
+            <p class="sponsors__tier-label">Premier Sponsor</p>
+            <ul class="sponsors__list">
+              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
+            </ul>
+          </div>
+          <div class="sponsors__tier">
+            <p class="sponsors__tier-label">Supporting Sponsors</p>
+            <ul class="sponsors__list">
+              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
+              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
+              <li class="sponsors__item"><div class="sponsors__logo media-block media-block--3x1"></div></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="/" class="footer__logo" aria-label="NYT Events home">
+        <span class="footer__logo-text">The New York Times Events</span>
+      </a>
+    </div>
+    <div class="footer__nav-row">
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <ul class="footer__nav-col">
+          <li><a href="#" class="footer__nav-link">Upcoming Events</a></li>
+          <li><a href="#" class="footer__nav-link">Past Events</a></li>
+        </ul>
+        <ul class="footer__nav-col">
+          <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer__nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2022 New York Times</p>
+    </div>
+  </footer>
+
+</body>
+</html>

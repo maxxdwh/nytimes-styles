@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Gore — Speaker Bio — NYT Events</title>
+  <link rel="stylesheet" href="../tokens/index.css">
+  <link rel="stylesheet" href="../components/components.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__logo" href="/" aria-label="NYT Events home">
+      <span class="nav__logo-xs" aria-hidden="true">
+        <span class="nav__logo-t">T</span>
+        <span class="nav__logo-pipe">|</span>
+        <span class="nav__logo-events">Events</span>
+      </span>
+      <span class="nav__logo-md" aria-hidden="true">
+        <span class="nav__logo-nyt">The New York Times</span>
+        <span class="nav__logo-events">Events</span>
+      </span>
+      <span class="nav__logo-sr">The New York Times Events</span>
+    </a>
+    <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span class="nav__hamburger"></span>
+    </button>
+  </header>
+
+  <div class="nav-menu" aria-hidden="true" role="dialog" aria-label="Site navigation">
+    <div class="nav-menu__inner">
+      <button class="nav-menu__close" aria-label="Close menu">×</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item"><a href="/upcoming" class="nav-menu__link">Upcoming Events</a></li>
+          <li class="nav-menu__item"><a href="/past" class="nav-menu__link">Past Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Bio header -->
+    <div class="container">
+      <div class="page-section">
+        <div class="bio-header">
+          <div class="bio-header__photo-col">
+            <div class="bio-header__photo media-block media-block--1x1"></div>
+            <ul class="bio-header__social" aria-label="Social links">
+              <li><a href="#" class="bio-header__social-link" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a></li>
+              <li><a href="#" class="bio-header__social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a></li>
+            </ul>
+          </div>
+          <div class="bio-header__body">
+            <p class="eyebrow"><a href="/event/climate-hub-2022" class="eyebrow eyebrow--link">Climate Hub 2022</a></p>
+            <h1 class="bio-header__name">Al Gore</h1>
+            <p class="bio-header__title">45th Vice President of the United States; Founder &amp; Chairman, The Climate Reality Project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Bio body text -->
+    <div class="container">
+      <div class="event-body-grid page-section">
+        <div class="event-body-grid__text">
+          <div class="body-text">
+            <p>Al Gore served as the 45th Vice President of the United States from January 1993 to January 2001 under President Bill Clinton. He was the Democratic nominee for President in 2000.</p>
+            <p>Gore is the founder and chairman of The Climate Reality Project, a nonprofit devoted to solving the climate crisis. He is co-founder and chairman of Generation Investment Management and a partner at Kleiner Perkins. He currently serves on the board of directors of Apple Inc. and is a senior advisor to Google.</p>
+            <p>He was awarded the Nobel Peace Prize in 2007, along with the Intergovernmental Panel on Climate Change, for his work on climate change. His documentary "An Inconvenient Truth" won two Academy Awards.</p>
+            <p>Gore is the author of several books, including "Earth in the Balance," "An Inconvenient Truth," "The Assault on Reason," "Our Choice," "The Future," and "An Inconvenient Sequel: Truth to Power."</p>
+          </div>
+        </div>
+        <div class="event-body-grid__media">
+          <!-- Speaking at -->
+          <aside class="speaking-at">
+            <h2 class="speaking-at__heading">Speaking at</h2>
+            <ul class="speaking-at__list">
+              <li class="speaking-at__item">
+                <a href="/event/climate-hub-2022" class="speaking-at__link">
+                  <div class="media-block media-block--3x2 speaking-at__thumb"></div>
+                  <div class="speaking-at__body">
+                    <h3 class="speaking-at__title">Climate Hub 2022</h3>
+                    <p class="speaking-at__date">October 3–7, 2022 · New York City</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="/" class="footer__logo" aria-label="NYT Events home">
+        <span class="footer__logo-text">The New York Times Events</span>
+      </a>
+    </div>
+    <div class="footer__nav-row">
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <ul class="footer__nav-col">
+          <li><a href="#" class="footer__nav-link">Upcoming Events</a></li>
+          <li><a href="#" class="footer__nav-link">Past Events</a></li>
+        </ul>
+        <ul class="footer__nav-col">
+          <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer__nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2022 New York Times</p>
+    </div>
+  </footer>
+
+</body>
+</html>

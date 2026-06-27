@@ -1,0 +1,95 @@
+/* Page-level layout — NYT Styles
+   Wraps component blocks into full pages.
+   ---------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--font-franklin);
+}
+
+/* ── Container ── */
+
+.container {
+  width: 100%;
+  padding-left: var(--margin-xs);
+  padding-right: var(--margin-xs);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+@media (min-width: 480px)  { .container { padding-left: var(--margin-sm);  padding-right: var(--margin-sm);  } }
+@media (min-width: 720px)  { .container { padding-left: var(--margin-md);  padding-right: var(--margin-md);  } }
+@media (min-width: 900px)  { .container { padding-left: var(--margin-lg);  padding-right: var(--margin-lg);  } }
+@media (min-width: 1200px) { .container { padding-left: var(--margin-xl);  padding-right: var(--margin-xl);  } }
+@media (min-width: 1500px) { .container { padding-left: var(--margin-2xl); padding-right: var(--margin-2xl); } }
+@media (min-width: 1800px) { .container { padding-left: var(--margin-3xl); padding-right: var(--margin-3xl); } }
+
+/* ── Event body grid (media left / text right on lg+) ── */
+
+.event-body-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-24);
+  padding: var(--space-24) 0;
+}
+@media (min-width: 900px) {
+  .event-body-grid {
+    grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+    gap: var(--space-32);
+    align-items: start;
+  }
+}
+.event-body-grid__media { min-width: 0; }
+.event-body-grid__text  { min-width: 0; }
+
+/* Lead paragraph — large opening text on desktop */
+.lead-text {
+  font-family: var(--font-cheltenham);
+  font-size: var(--font-size-22);
+  line-height: var(--line-height-130);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-24);
+}
+@media (min-width: 900px) { .lead-text { font-size: var(--font-size-28); } }
+
+/* ── Photo gallery (2-up image grid) ── */
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-24) 0;
+}
+.photo-gallery--3up { grid-template-columns: repeat(3, 1fr); }
+
+/* ── Hero image (full-bleed, above fold) ── */
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: var(--color-gray-100);
+}
+@media (min-width: 900px) { .hero-image { aspect-ratio: 21 / 9; } }
+
+/* ── Max hero layout (Dealbook style) ── */
+
+/* hero art floated right on desktop — handled in component CSS */
+
+/* ── Divider ── */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-primary);
+  margin: 0;
+}
+
+/* ── Page section spacing ── */
+
+.page-section { padding: var(--space-32) 0; }
+@media (min-width: 720px) { .page-section { padding: var(--space-48) 0; } }
