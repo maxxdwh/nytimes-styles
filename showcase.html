@@ -305,6 +305,101 @@
   </footer>
 </div>
 
+<!-- event-format -->
+<div class="showcase-section">
+  <p class="showcase-label">event-format</p>
+  <p class="event-format event-format--virtual">Virtual</p>
+  <p class="event-format event-format--in-person">In-Person</p>
+</div>
+
+<!-- share-button -->
+<div class="showcase-section">
+  <p class="showcase-label">share-button</p>
+  <button class="share-button" aria-label="Share this event">
+    <svg class="share-button__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+      <circle cx="18" cy="5"  r="3"/><circle cx="6"  cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+      <line x1="8.59"  y1="13.51" x2="15.42" y2="17.49"/>
+      <line x1="15.41" y1="6.51"  x2="8.59"  y2="10.49"/>
+    </svg>
+  </button>
+</div>
+
+<!-- subnav -->
+<div class="showcase-section" style="padding: 0;">
+  <p class="showcase-label" style="padding: var(--space-16); margin: 0;">subnav</p>
+  <nav class="subnav" aria-label="Page sections" style="position: static;">
+    <ul class="subnav__list">
+      <li><a href="#" class="subnav__link subnav__link--active">Overview</a></li>
+      <li><a href="#" class="subnav__link">Speakers</a></li>
+      <li><a href="#" class="subnav__link">Pricing</a></li>
+      <li><a href="#" class="subnav__link">FAQ</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- pricing -->
+<div class="showcase-section">
+  <p class="showcase-label">pricing</p>
+  <section class="pricing">
+    <h2 class="pricing__heading">Pricing</h2>
+    <div class="pricing__tier">
+      <div class="pricing__tier-header">
+        <p class="pricing__tier-name">General Admission</p>
+        <p class="pricing__tier-price">$25</p>
+      </div>
+      <div class="pricing__tier-body">
+        <p class="pricing__includes-label">This ticket includes:</p>
+        <ul class="pricing__includes-list">
+          <li>Volutpat porta enim</li>
+          <li>Egestas viverra quam ullamcorper neque odio vel ultrices</li>
+          <li>Dictum pellentesque accumsan</li>
+        </ul>
+        <p class="pricing__note">The price of this ticket does not include cost of food from vendor stations or hands-on experiences.</p>
+      </div>
+      <a href="#" class="btn btn--primary pricing__cta">Buy Ticket</a>
+    </div>
+  </section>
+</div>
+
+<!-- faq -->
+<div class="showcase-section">
+  <p class="showcase-label">faq</p>
+  <section class="faq">
+    <h2 class="faq__heading">FAQ</h2>
+    <p class="faq__intro">Phasellus mollis a posuere massa dictumst feugiat. Mauris nulla facilisis mi, risus et. Sagittis aliquam pellentesque lobortis mauris et cursus.</p>
+    <div class="accordion faq__accordion">
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="true" aria-controls="sfaq1">
+          <span class="accordion__label">Sign-up details</span>
+          <span class="accordion__icon">−</span>
+        </button>
+        <div class="accordion__panel" id="sfaq1"><div class="body-text"><p>Donec dictum orci eget amet dolor. Mattis in nisi, pellentesque maecenas donec.</p></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="sfaq2">
+          <span class="accordion__label">What are The Festival hours?</span>
+          <span class="accordion__icon">+</span>
+        </button>
+        <div class="accordion__panel" id="sfaq2" hidden><div class="body-text"><p>Answer goes here.</p></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="sfaq3">
+          <span class="accordion__label">COVID safety</span>
+          <span class="accordion__icon">+</span>
+        </button>
+        <div class="accordion__panel" id="sfaq3" hidden><div class="body-text"><p>Answer goes here.</p></div></div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="sfaq4">
+          <span class="accordion__label">Maecenas ultrices sit?</span>
+          <span class="accordion__icon">+</span>
+        </button>
+        <div class="accordion__panel" id="sfaq4" hidden><div class="body-text"><p>Answer goes here.</p></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <script>
   // minimal accordion toggle
   document.querySelectorAll('.accordion__trigger').forEach(btn => {
